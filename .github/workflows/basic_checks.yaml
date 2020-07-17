@@ -35,7 +35,7 @@ jobs:
         run: |
           remotes::install_deps(dependencies = TRUE, repos = BiocManager::repositories())
           remotes::install_cran("rcmdcheck")
-          install.packagesinstall.packages('Rcpp', repos='http://cran.r-project.org')
+          install.packages('Rcpp', repos='http://cran.r-project.org')
         shell: Rscript {0}
 
       - name: Check
